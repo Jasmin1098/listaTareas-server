@@ -2,7 +2,8 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-const taskRouter = require('./list-edit-router');
+const {router: taskRouter} = require('./list-edit-router');
+const {tasks} = require('./list-edit-router');
 
 app.use(express.json());
 app.use('/tasks', taskRouter);

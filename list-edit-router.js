@@ -52,4 +52,4 @@ const tasks = [
     }
   });
   
-  module.exports = router;
+  module.exports = {router, tasks};
